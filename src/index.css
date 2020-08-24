@@ -1,0 +1,30 @@
+/* reset & common styles */
+body, ul, h1, h2, h3, p, button, a, div{
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Courier';
+  letter-spacing: 2px;
+  list-style-type: none;
+  text-decoration: none;
+}
+body{
+  overflow: hidden;
+}
+.marker-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(175,15,97,1) 35%);
+  border: 2px solid #fff;
+  border-radius: 100%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  cursor: 'pointer';
+  /* &:hover {
+    z-index: 1;
+  } */
+}
