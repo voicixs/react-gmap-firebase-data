@@ -21,8 +21,8 @@ class App extends Component {
   getLastPlaces = () => {
     const devices = database.ref("devices");
     devices.on("value", (devices) => {
+      let places = []
       devices.forEach((device) => {
-        let places = []
         device
           .child("places")
           .ref.limitToLast(1)
